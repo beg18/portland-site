@@ -8,6 +8,21 @@
 .banner__wrap{
   .row-flex();
   justify-content: space-around;
+
+  .md-block({
+  justify-content: center;
+  flex-direction: column;
+  });
+
+  .sm-block({
+    justify-content: center;
+    flex-direction: column;
+  });
+
+  .xs-block({
+    justify-content: center;
+    flex-direction: column;
+  });
 }
 
 .banner__content {
@@ -15,11 +30,19 @@
   .size(5);
   .shift-left(1);
   .padding-xxlarge();
+  .size-md(8);
+  .size-sm(10);
+  .size-xs(12);
 }
 
 .banner__empty{
   .col();
   .size(6);
+  .size-md(4);
+  .size-sm(2);
+  .size-xs(12);
+  .hide-medium();
+  .hide-small();
 }
 
 
@@ -57,4 +80,3 @@
   .montserrat();
   text-transform: uppercase;
 }
-
