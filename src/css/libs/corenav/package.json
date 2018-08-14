@@ -1,0 +1,57 @@
+{
+  "_from": "corenav",
+  "_id": "corenav@1.1.2",
+  "_inBundle": false,
+  "_integrity": "sha512-VKjx6s1rVg6Kk67LqkSRSDJtcXPTJtLBy7busdID0Vy3rJrdFHthBxZBsUwsrrdoi9dew4tFbVUiiLBmCrp5Iw==",
+  "_location": "/corenav",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "corenav",
+    "name": "corenav",
+    "escapedName": "corenav",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/corenav/-/corenav-1.1.2.tgz",
+  "_shasum": "362b33a73003b8993eb697275db58a3f2e2aa38b",
+  "_spec": "corenav",
+  "_where": "D:\\lessTest",
+  "author": {
+    "name": "adamnurdin01"
+  },
+  "bugs": {
+    "url": "https://github.com/adamnurdin01/corenav/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "coreNavigatio is a multi purpose navigation menu for javascript library based on jquery, come with more style and easy to combination.",
+  "homepage": "https://github.com/adamnurdin01/corenav#readme",
+  "keywords": [
+    "Menu",
+    "Header",
+    "Multi",
+    "Menu",
+    "Navigation",
+    "Multi",
+    "Header",
+    "Menu"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "corenav",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamnurdin01/corenav.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.1.2"
+}
