@@ -3,10 +3,6 @@
   .padding-64();
 }
 
-.about {
-
-}
-
 .about__header {
   .montserrat();
   text-align: center;
@@ -36,12 +32,35 @@
   .row-flex();
   justify-content: center;
   align-items: center;
+
+  .sm-block({
+  justify-content: center;
+  align-items: center;
+  });
 }
 
 .about__item {
   padding-right: 30px;
   .col();
   .size(4);
+  .size-md(8);
+  .size-sm(10);
+  .size-xs(12);
+
+  .sm-block({
+    padding-right: 0;
+    margin-bottom: 30px;
+  });
+
+  .sm-block({
+    padding-right: 0;
+    margin-bottom: 20px;
+  });
+
+  .sm-block({
+    padding-right: 0;
+    margin-bottom: 10px;
+  });
 }
 
 .about__avatar {
