@@ -69,25 +69,56 @@ function collapsible() {
 /* Modals
     ====================================*/
 
+    $(".js-modal").each(function() {
+        var modalWidth = $(this).innerWidth() / 2;
+
+        $(this).css({
+            "marginLeft": "-" + modalWidth + "px"
+        });
+    });
+
     $(".js-show-modal").on("click", function(e) {
 
         e.preventDefault();
 
         var currentModal = $(this).attr("href");
 
-        $(currentModal + ", #js-overlay").fadeIn(500);
-        $("body").addClass("open-modal");
+        $(currentModal).fadeIn(500);
+        $("body").append("<div class='overlay' id='js-overlay'></div>").addClass("open-modal");
 
     });
 
 
-    $("#js-overlay, .js-modal-close").on("click", function(e) {
+    $(".js-modal-close").on("click", function(e) {
 
         e.preventDefault();
-        $(".js-modal, #js-overlay").fadeOut(100);
+        $(".js-modal").fadeOut(100);
         $("body").removeClass("open-modal");
+        $("#js-overlay").remove();
 
     });
 
+
+    $("body").on("click", "#js-overlay", function() {
+        $(".js-modal").fadeOut(100);
+        $("body").removeClass("open-modal");
+        $("#js-overlay").remove();
+    });
+
+
+    /* WOW.js https://github.com/matthieua/WOW
+    ========================*/
+
+    var wow = new WOW(
+        {
+            boxClass:     'wow',      // animated element css class (default is wow)
+            animateClass: 'animated', // animation css class (default is animated)
+            offset:       140,          // distance to the element when triggering the animation (default is 0)
+            mobile:       false,       // trigger animations on mobile devices (default is true)
+            live:         true,       // act on asynchronously loaded content (default is true)
+            scrollContainer: null // optional scroll container selector, otherwise use window
+        }
+    );
+    wow.init();
 
 });
