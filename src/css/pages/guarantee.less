@@ -24,6 +24,11 @@
   .row-flex();
   justify-content: space-between;
   align-items: center;
+
+  .xs-block({
+  justify-content: center;
+  align-items: center;
+  });
 }
 
 .best__sellers-item {
@@ -34,6 +39,18 @@
   text-align: center;
   .col-padding();
   .size(3);
+  .size-md(6);
+  .size-xs(10);
+
+  .md-block({
+    border-right: 0;
+    border-bottom: 1px solid #F0F2F7;
+  });
+
+  .xs-block({
+    border-right: 0;
+    border-bottom: 1px solid #F0F2F7;
+  });
 
   &:last-child{
     border-right: none;
