@@ -8,8 +8,10 @@ $('nav').coreNavigation({
     mode: 'sticky'
 });
 
-/*menu__bottom*/
+/*menu__bottom menu__top-left-btn*/
+var leftBtn = document.querySelector('.menu__top-left-btn');
 var home = document.querySelector('.menu__bottom-icon');
+leftBtn.addEventListener('click', collapsible); 
 home.addEventListener('click', collapsible);
 
 function collapsible() {
